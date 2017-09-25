@@ -1,0 +1,89 @@
+Raktározó és nyilvántartó program
+Követelményspecifikáció
+
+Futtató környezet: Windows Desktop
+Kik használják: A megrendelõ cég alkalmazottai, cégen belüli felhasználásra
+
+A program leírása és pontos követelmények
+
+	A program felhasználása:
+
+		-Elõsegíti a cégen belüli raktározói feladatokat
+			-Új termék felvétele a raktárba
+			-Meglévõ termék eltávolítása
+			-Meglévõ termék adatainak kezelése
+			-Rendelések figyelése
+
+		-Elõsegíti a cégen belüli megrendelési feladatokat
+			-Jelentés file létrehozása, amely az egész raktár adatait tartalmazza
+			-Jelentés file létrehozása, amely azokat a termékeket listázza ki, amelyeket rendelni kell.
+				-Egy terméket akkor kell rendelni, hogyha a raktáron lévõ darabszám kisebb, mint a minimum darabszám
+
+	A program felépítése és követelmények
+
+		-A háttérben egy Access adatbázisban tároljuk a raktárban található termékek adatait(offline) és a megrendeléseket:
+ 		Egy raktárban található terméket a következõ adatok írnak le
+			-Termék azonosító
+			-Termék neve
+			-Termék típusa
+			-Raktárban található darabszám
+			-Minimum darabszám (mennyinek kellene minimum a raktárban lennie)
+			-Megrendelési lehetõség
+				-weblap
+				-telefon
+			-Termék azonosítóhoz tartozó vonalkód
+
+		Egy megrendelést a következõ adatok írnak le
+			-Rendelt termék azonosító
+			-Rendelt mennyiség
+			-Rendelés ideje
+			-Várható érkezés
+			-Rendelõ
+			-Beérkezett-e?
+
+		-A program rendelkezzen egy letisztult kezelõfelülettel. 
+  		 A felületen a következõ dolgok szerepeljenek
+
+			-A raktár aktuális tartalma
+				-Az elemek kattintásra kiválaszthatók legyenek.
+		 		 Kiválasztásnál a tulajdonságaik módosíthatók legyenek a következõ formában
+					-A darabszám rögtön módosítható legyen
+					-Egy másik felület megnyitásán keresztül a termék egyéb adatai is módosítható legyen, ilyen például a termék neve, típusa, darabszáma, minimum darabszáma vagy a megrendelés adatai.
+					 És ezen az új felületen keresztül lehessen az adott terméket törölni is az adatbázisból
+
+			-Két rádió gomb segítségével át lehessen váltani a ’megrendelésre vár’ nézet és a 'raktár' mód közt
+				-raktár mód: a raktár aktuális tartalma az elõbb leírtak szerint
+				-megrendelésre vár:  ahol csak azokat a termékeket jelenítjük meg, amelyek megrendelésre várnak. 
+				 (Egy termék akkor vár megrendelésre, hogyha a raktárban található darabszáma kisebb, mint a minimum darabszám) 
+			
+			-Egy ’Raktár jelentés létrehozása’ feliratú gombbal is rendelkezzen, amelyre ha rákattintunk akkor a program automatikusan létrehoz egy elõre megadott elérési útvonalra egy excel jelentésfilét,
+			  amely tartalmazza a raktár összes termékének az összes adatát.
+			-Egy ’Megrendelés jelentés létrehozása’ feliratú gombbal is rendelkezzen, amelyre ha rákattintunk akkor a program automatikusan létrehoz egy elõre megadott elérési útvonalra egy excel jelentésfilét,
+			  amely tartalmazza a raktár összes azon termékét, amelyet meg kell rendelni. Fontos, hogy emellett tartalmazza a megrendelési lehetõséget is.
+			-Egy 'Megrendelések' feliratú gombbal is rendelkezzen, amelyre ha rákattintunk akkor a program automatikusan kilistázza a még nem beérkezett rendeléseket
+			
+			-A kezelõfelületen kereshetõ legyen az összes termék között, a kiválasztott oszlopban a keresett elem. (Ha elkezdünk begépelni egy szót, akkor automatikusan jelölje ki az aktuális pozíciótól számított, lefelé irányban a legelsõ elõfordulást.)
+			-Az oszlopok szerint rendezhetõk legyenek a termékek.
+
+
+	Követelmények
+
+		-Tudjunk a meglévõ raktárban tárolt termékekkel dolgozni
+  			-Tudjuk növelni a darabszámot
+  			-Tudjuk csökkenteni a darabszámot
+  			-Módosítható legyen a minimum darabszám
+			-Módosítható legyen a termék neve és a típusa
+  			-Módosítható legyenek a megrendelési lehetõségek adatai
+		-Tudjunk új, a raktárban egyenlõre nem szereplõ terméket felvinni az adatbázisba
+  			-Csak a termék nevét legyen kötelezõ megadni
+		-A termékeket lehessen rendezni a különbözõ tulajdonságaik alapján
+		-A termékek kereshetõek legyenek gépeléskor
+
+		-Rendelések nyomonkövetése
+
+		-A program állítson elõ egy Excel file-t ami kilistázza azokat a termékeket, amelyek jelenleg a raktárban találhatóak. (Az összes adatával együtt)
+		-A program állítson elõ egy Excel file-t ami kilistázza azokat a termékeket, amelyeket meg kell rendelni, és feltünteni a megrendelési lehetõségeket is
+
+		-A program az összes elõforduló hibát kezelje a következõ formában
+			-Egy hibaüzenet kiírása minden hiba keletkezésekor, a hiba pontos leírásával
+
