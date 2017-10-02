@@ -9,9 +9,14 @@
 	Gomb: új termékfelvétel
 	Textbox: kereséshez
 	Gomb: Megrendelés létrehozása
+	// Legördülõ lista, ahol rászûrhetünk egy beszállítóra
+	// Gomb: beszállító hozzáadása ( külön táblában tárolni a beszállítókat és néhány adatot róluk)
+	// Vonalkód létrehozása egy pictureboxban
 
 -Megrendelés
 	Gomb: Megrendelések kilistázása
 	Gomb: Lejárt határidejû megrendelések kilistázása
+
+
 	
 	
