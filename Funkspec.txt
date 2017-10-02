@@ -1,4 +1,4 @@
--Választási lehetõség a Raktár és a REndelések között
+-Választási lehetõség a Raktár és a Rendelések között
 
 -Raktár
 	Gomb: szerkesztéshez
@@ -9,9 +9,9 @@
 	Gomb: új termékfelvétel
 	Textbox: kereséshez
 	Gomb: Megrendelés létrehozása
-	// Legördülõ lista, ahol rászûrhetünk egy beszállítóra
-	// Gomb: beszállító hozzáadása ( külön táblában tárolni a beszállítókat és néhány adatot róluk)
-	// Vonalkód létrehozása egy pictureboxban
+	Legördülõ lista, ahol rászûrhetünk egy beszállítóra
+	Gomb: beszállító hozzáadása ( külön táblában tárolni a beszállítókat és néhány adatot róluk)
+	Vonalkód létrehozása egy pictureboxban
 
 -Megrendelés
 	Gomb: Megrendelések kilistázása
