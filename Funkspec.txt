@@ -1,0 +1,17 @@
+-Választási lehetõség a Raktár és a REndelések között
+
+-Raktár
+	Gomb: szerkesztéshez
+	2 Rádiógomb: termékek listázása (rendelendõ vagy Összes termék)
+	Gomb: Raktári jelentés létrehozásához
+	Gomb: Jelentés a megrendelendõ termékekrõl
+	Gomb: A be nem érkezett megrendelések listázásához
+	Gomb: új termékfelvétel
+	Textbox: kereséshez
+	Gomb: Megrendelés létrehozása
+
+-Megrendelés
+	Gomb: Megrendelések kilistázása
+	Gomb: Lejárt határidejû megrendelések kilistázása
+	
+	
