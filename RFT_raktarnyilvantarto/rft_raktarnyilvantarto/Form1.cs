@@ -25,7 +25,7 @@ namespace rft_raktarnyilvantarto
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            AdatbazisBeolvasasa(@"C:\Users\dmark\Desktop\Beadando nyivantarto\RFT-raktarnyilvantarto\Database.accdb");
         }
 
         private void AdatbazisBeolvasasa(string path)
@@ -39,7 +39,7 @@ namespace rft_raktarnyilvantarto
             Command.CommandText = "SELECT Vonalkod, Megnevezes, Tipus, Raktar_db, Minimum_db, Megrendelo FROM Termek";
 
             OleDbDataReader Reader = Command.ExecuteReader();
-            Termek atm = new Termek();
+            Termek atm = new Termek("1111111111116","atm");
 
             while (Reader.Read())
             {
