@@ -25,7 +25,7 @@ namespace rft_raktarnyilvantarto
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            AdatbazisBeolvasasa(@"C:\Users\dmark\Desktop\Beadando nyivantarto\RFT-raktarnyilvantarto\Database.accdb");
+            AdatbazisBeolvasasa("Database.accdb");
 
             osszes_radio.Checked = true;
             OsszesTermekMegjelenitese();
