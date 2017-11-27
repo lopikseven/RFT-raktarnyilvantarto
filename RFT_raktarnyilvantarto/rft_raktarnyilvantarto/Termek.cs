@@ -16,7 +16,7 @@ namespace rft_raktarnyilvantarto
             {
                 if (value.Length == 13)
                 {
-                    if (value == "0000000000000")
+                    if (value == "0000000000000") // Elfogadjuk a full 0 állapotot is
                     {
                         vonalkod = value;
                         return;

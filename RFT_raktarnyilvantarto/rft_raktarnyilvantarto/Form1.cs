@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace rft_raktarnyilvantarto
 {
@@ -167,6 +168,57 @@ namespace rft_raktarnyilvantarto
             {
                 OsszesTermekMegjelenitese();
             }
+        }
+
+        private void jelentes_button_Click(object sender, EventArgs e)
+        {
+            //Egyszerre hozza létre mind a kettő jelentés file-t
+
+            //Minden termék
+            StreamWriter sw = new StreamWriter("OsszesTermek.xls",false,Encoding.Unicode);
+
+            sw.WriteLine("Vonalkód\tNév\tTípus\tMinimum db\tRaktár db\tCég név\tTelefon\tWeblap");
+            foreach (Termek T in Termekek)
+            {
+                sw.Write("{0}\t{1}\t{2}\t{3}\t{4}\t",T.Vonalkod,T.Nev,T.Tipus,T.Min_db,T.Raktar_db);
+
+                if (T.Megrendelok.Count > 0)
+                {
+                    for (int i = 0; i < T.Megrendelok.Count; i++)
+                    {
+                        foreach (Megrendelo M in Megrendelok)
+                        {
+                            if (M.Id == T.Megrendelok[i]) sw.Write("{0}\t{1}\t{2}", M.Nev, M.Telefon, M.Weblap);
+                        }
+                    }
+                }
+                else sw.Write("-\t-\t-");
+                sw.WriteLine();
+            }
+            sw.Close();
+
+            sw = new StreamWriter("MegrendelniTermek.xls",false,Encoding.Unicode);
+            sw.WriteLine("Vonalkód\tNév\tTípus\tMinimum db\tRaktár db\tCég név\tTelefon\tWeblap");
+            foreach (Termek T in Termekek)
+            {
+                if(T.Raktar_db < T.Min_db)sw.Write("{0}\t{1}\t{2}\t{3}\t{4}\t", T.Vonalkod, T.Nev, T.Tipus, T.Min_db, T.Raktar_db);
+
+                if (T.Megrendelok.Count > 0)
+                {
+                    for (int i = 0; i < T.Megrendelok.Count; i++)
+                    {
+                        foreach (Megrendelo M in Megrendelok)
+                        {
+                            if (M.Id == T.Megrendelok[i]) sw.Write("{0}\t{1}\t{2}", M.Nev, M.Telefon, M.Weblap);
+                        }
+                    }
+                }
+                else sw.Write("-\t-\t-");
+                sw.WriteLine();
+            }
+            sw.Close();
+
+            MessageBox.Show("Jelentés file-k létrehozva!");
         }
     }
 }

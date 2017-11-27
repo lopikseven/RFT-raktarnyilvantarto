@@ -40,7 +40,7 @@
             this.uj_termek_button = new System.Windows.Forms.Button();
             this.bejovo_rendeles_button = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.rendelendo_button = new System.Windows.Forms.Button();
+            this.jelentes_button = new System.Windows.Forms.Button();
             this.rak_allapot_button = new System.Windows.Forms.Button();
             this.rendelendo_radio = new System.Windows.Forms.RadioButton();
             this.osszes_radio = new System.Windows.Forms.RadioButton();
@@ -163,14 +163,15 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // rendelendo_button
+            // jelentes_button
             // 
-            this.rendelendo_button.Location = new System.Drawing.Point(206, 103);
-            this.rendelendo_button.Name = "rendelendo_button";
-            this.rendelendo_button.Size = new System.Drawing.Size(188, 37);
-            this.rendelendo_button.TabIndex = 25;
-            this.rendelendo_button.Text = "Rendelendő termékek";
-            this.rendelendo_button.UseVisualStyleBackColor = true;
+            this.jelentes_button.Location = new System.Drawing.Point(206, 103);
+            this.jelentes_button.Name = "jelentes_button";
+            this.jelentes_button.Size = new System.Drawing.Size(188, 37);
+            this.jelentes_button.TabIndex = 25;
+            this.jelentes_button.Text = "Jelentés létrehozása";
+            this.jelentes_button.UseVisualStyleBackColor = true;
+            this.jelentes_button.Click += new System.EventHandler(this.jelentes_button_Click);
             // 
             // rak_allapot_button
             // 
@@ -216,11 +217,12 @@
             // 
             // lb_termekek
             // 
+            this.lb_termekek.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lb_termekek.FormattingEnabled = true;
-            this.lb_termekek.ItemHeight = 16;
+            this.lb_termekek.ItemHeight = 31;
             this.lb_termekek.Location = new System.Drawing.Point(12, 195);
             this.lb_termekek.Name = "lb_termekek";
-            this.lb_termekek.Size = new System.Drawing.Size(708, 340);
+            this.lb_termekek.Size = new System.Drawing.Size(708, 314);
             this.lb_termekek.TabIndex = 20;
             // 
             // Form1
@@ -240,7 +242,7 @@
             this.Controls.Add(this.uj_termek_button);
             this.Controls.Add(this.bejovo_rendeles_button);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.rendelendo_button);
+            this.Controls.Add(this.jelentes_button);
             this.Controls.Add(this.rak_allapot_button);
             this.Controls.Add(this.rendelendo_radio);
             this.Controls.Add(this.osszes_radio);
@@ -268,7 +270,7 @@
         private System.Windows.Forms.Button uj_termek_button;
         private System.Windows.Forms.Button bejovo_rendeles_button;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button rendelendo_button;
+        private System.Windows.Forms.Button jelentes_button;
         private System.Windows.Forms.Button rak_allapot_button;
         private System.Windows.Forms.RadioButton rendelendo_radio;
         private System.Windows.Forms.RadioButton osszes_radio;
