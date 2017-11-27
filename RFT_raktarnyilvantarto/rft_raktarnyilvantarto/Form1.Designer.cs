@@ -45,7 +45,7 @@
             this.rendelendo_radio = new System.Windows.Forms.RadioButton();
             this.osszes_radio = new System.Windows.Forms.RadioButton();
             this.szerkesztes_button = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lb_termekek = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // rendelesek_button
@@ -191,6 +191,7 @@
             this.rendelendo_radio.TabStop = true;
             this.rendelendo_radio.Text = "Megrendelendő termékek";
             this.rendelendo_radio.UseVisualStyleBackColor = true;
+            this.rendelendo_radio.CheckedChanged += new System.EventHandler(this.rendelendo_radio_CheckedChanged);
             // 
             // osszes_radio
             // 
@@ -202,6 +203,7 @@
             this.osszes_radio.TabStop = true;
             this.osszes_radio.Text = "Összes termék";
             this.osszes_radio.UseVisualStyleBackColor = true;
+            this.osszes_radio.CheckedChanged += new System.EventHandler(this.osszes_radio_CheckedChanged);
             // 
             // szerkesztes_button
             // 
@@ -212,14 +214,14 @@
             this.szerkesztes_button.Text = "Szerkesztés";
             this.szerkesztes_button.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lb_termekek
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 195);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(708, 340);
-            this.listBox1.TabIndex = 20;
+            this.lb_termekek.FormattingEnabled = true;
+            this.lb_termekek.ItemHeight = 16;
+            this.lb_termekek.Location = new System.Drawing.Point(12, 195);
+            this.lb_termekek.Name = "lb_termekek";
+            this.lb_termekek.Size = new System.Drawing.Size(708, 340);
+            this.lb_termekek.TabIndex = 20;
             // 
             // Form1
             // 
@@ -243,7 +245,7 @@
             this.Controls.Add(this.rendelendo_radio);
             this.Controls.Add(this.osszes_radio);
             this.Controls.Add(this.szerkesztes_button);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lb_termekek);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -271,7 +273,7 @@
         private System.Windows.Forms.RadioButton rendelendo_radio;
         private System.Windows.Forms.RadioButton osszes_radio;
         private System.Windows.Forms.Button szerkesztes_button;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lb_termekek;
     }
 }
 
