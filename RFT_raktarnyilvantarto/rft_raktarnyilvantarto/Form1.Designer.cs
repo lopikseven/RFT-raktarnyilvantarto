@@ -145,6 +145,7 @@
             this.uj_termek_button.TabIndex = 28;
             this.uj_termek_button.Text = "Új termék";
             this.uj_termek_button.UseVisualStyleBackColor = true;
+            this.uj_termek_button.Click += new System.EventHandler(this.uj_termek_button_Click);
             // 
             // bejovo_rendeles_button
             // 
@@ -225,6 +226,7 @@
             this.lb_termekek.Name = "lb_termekek";
             this.lb_termekek.Size = new System.Drawing.Size(708, 314);
             this.lb_termekek.TabIndex = 20;
+            this.lb_termekek.MouseEnter += new System.EventHandler(this.lb_termekek_MouseEnter);
             // 
             // Form1
             // 
@@ -252,6 +254,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
             this.ResumeLayout(false);
             this.PerformLayout();
 

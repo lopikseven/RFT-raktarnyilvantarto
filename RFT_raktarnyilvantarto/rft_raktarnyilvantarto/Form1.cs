@@ -228,5 +228,40 @@ namespace rft_raktarnyilvantarto
            form2.Show();
            this.Hide();
         }
+
+        private void uj_termek_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 UjTermekForm = new Form3();
+            UjTermekForm.Show();
+        }
+
+        private void Form1_MouseEnter(object sender, EventArgs e)
+        {
+            if (Program.MenteniKell)
+            {
+                Termekek.Add(Program.UjTermek);
+
+                if (osszes_radio.Checked) lb_termekek.Items.Add(Program.UjTermek.Nev + " - " + Program.UjTermek.Tipus);
+                else if (rendelendo_radio.Checked && Program.UjTermek.Raktar_db < Program.UjTermek.Min_db) lb_termekek.Items.Add(Program.UjTermek.Nev + " - " + Program.UjTermek.Tipus);
+
+                Program.UjTermek = new Termek();
+                Program.MenteniKell = false;
+            }
+        }
+
+        private void lb_termekek_MouseEnter(object sender, EventArgs e)
+        {
+            if (Program.MenteniKell)
+            {
+                Termekek.Add(Program.UjTermek);
+
+                if (osszes_radio.Checked) lb_termekek.Items.Add(Program.UjTermek.Nev + " - " + Program.UjTermek.Tipus);
+                else if (rendelendo_radio.Checked && Program.UjTermek.Raktar_db < Program.UjTermek.Min_db) lb_termekek.Items.Add(Program.UjTermek.Nev + " - " + Program.UjTermek.Tipus);
+
+                Program.UjTermek = new Termek();
+                Program.MenteniKell = false;
+            }
+        }
     }
 }

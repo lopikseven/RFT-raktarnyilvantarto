@@ -20,32 +20,42 @@ namespace rft_raktarnyilvantarto
         private void btn_termek_felvesz_Click(object sender, EventArgs e)
         {
             //Megrendelőket még nem lehet hozzá választani!!!
-            if (tb_vonalkod.Text.Length == 13 && tb_megnevezes.Text.Length > 0 && Convert.ToInt32(tb_raktaron.Text) >= 0 && Convert.ToInt32(tb_minimum.Text) >= 0)
+            try
             {
-                Program.UjTermek = new Termek();
-                try
+                if (tb_vonalkod.Text.Length == 13 && tb_megnevezes.Text.Length > 0 && Convert.ToInt32(tb_raktaron.Text) >= 0 && Convert.ToInt32(tb_minimum.Text) >= 0)
                 {
-                    Program.UjTermek.Vonalkod = tb_vonalkod.Text;
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Hibás vonalkód!");
+                    Program.UjTermek = new Termek();
+                    try
+                    {
+                        Program.UjTermek.Vonalkod = tb_vonalkod.Text;
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Hibás vonalkód!");
+                        this.Close();
+                        Program.MainForm1.Show();
+                        return;
+                    }
+                    Program.UjTermek.Nev = tb_megnevezes.Text;
+                    Program.UjTermek.Tipus = tb_tipus.Text;
+                    Program.UjTermek.Raktar_db = Convert.ToInt32(tb_raktaron.Text);
+                    Program.UjTermek.Min_db = Convert.ToInt32(tb_minimum.Text);
+                    MessageBox.Show("Új termék sikeresen felvéve!");
+                    Program.MenteniKell = true;
+
                     this.Close();
                     Program.MainForm1.Show();
                     return;
                 }
-                Program.UjTermek.Nev = tb_megnevezes.Text;
-                Program.UjTermek.Tipus = tb_tipus.Text;
-                Program.UjTermek.Raktar_db = Convert.ToInt32(tb_raktaron.Text);
-                Program.UjTermek.Min_db = Convert.ToInt32(tb_minimum.Text);
-                MessageBox.Show("Új termék sikeresen felvéve!");
-                Program.MenteniKell = true;
 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nem sikerült a terméket felvenni!");
                 this.Close();
                 Program.MainForm1.Show();
                 return;
             }
-
             MessageBox.Show("Nem sikerült a terméket felvenni!");
             this.Close();
             Program.MainForm1.Show();
