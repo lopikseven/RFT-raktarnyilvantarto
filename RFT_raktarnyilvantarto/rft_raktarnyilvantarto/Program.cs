@@ -8,6 +8,13 @@ namespace rft_raktarnyilvantarto
 {
     static class Program
     {
+        // Itt tárolom azt a terméket, amit fel akarunk vinni a rendszerbe
+        public static Termek UjTermek;
+        public static bool MenteniKell;
+
+        //Fő felület
+        public static Form1 MainForm1 = new Form1();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -15,8 +22,8 @@ namespace rft_raktarnyilvantarto
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(MainForm1);
         }
     }
 }
