@@ -57,6 +57,7 @@
             this.rendelesek_button.Text = "Megrendelések";
             this.rendelesek_button.UseVisualStyleBackColor = true;
             this.rendelesek_button.UseWaitCursor = true;
+            this.rendelesek_button.Click += new System.EventHandler(this.rendelesek_button_Click);
             // 
             // mennyiseg_radio
             // 

@@ -220,5 +220,13 @@ namespace rft_raktarnyilvantarto
 
             MessageBox.Show("Jelentés file-k létrehozva!");
         }
+
+        private void rendelesek_button_Click(object sender, EventArgs e)
+        {
+            
+           Form2 form2 = new Form2();
+           form2.Show();
+           this.Hide();
+        }
     }
 }
