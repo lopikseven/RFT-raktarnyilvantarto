@@ -1,0 +1,14 @@
+Nagyvonalú rendszerterv
+
+
+A követelményspecifikációban lefektetett szoftver kifejlesztését,
+olyan célból, hogy a megrendelõ megvásárolja a cégének a szoftvert azért, hogy az alkalmazottai használják.
+
+Az ütemterv alapján ütemezve minden lépést.
+
+A projekt kezdete: 2017. Szeptember 25
+A projekt átadásának határideje: 2018 Január 2
+
+A programot C# Nyelven írva, .Net környezetben futtatva várjuk el.
+
+Akik dolgoznak rajta: Kiss Dániel, Danisovszky Márk
