@@ -1,0 +1,19 @@
+Árajánlat
+
+A szoftver fejlesztése közben minden egyes feladatra 1 napot szánunk.
+Ez azt jelenti, hogy az ütemterv alapján 26 ráfordított napot igényel a projekt.
+
+A célunk, hogy minden egyes dolgozott nap után 3 napos pihenõ idõszakot tartunk, ami persze fizetésmentes.
+Így a projektet összesen legfeljebb 104 nap alatt tudjuk átadni.
+
+A projekt kezdete: 2017 Szeptemben 25
+
+A projekt leadásának határideje: 2018 Január 2
+
+A projekten 2 ember dolgozik
+-Kiss Dániel
+-Danisovszky Márk
+
+Az egy napi munkával töltött bérük forintban: 5600 Ft
+
+Árajánlat: 26 * 5600 = 145.000 Ft
