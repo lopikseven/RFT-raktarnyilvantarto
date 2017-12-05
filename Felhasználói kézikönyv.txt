@@ -1,0 +1,31 @@
+Felhasználói leírás a program mûködéséhez
+
+A program elindítása után egy felület fogad minket, amin különbözõ gombokat látunk.
+
+(gomb) Raktár állapota - megnyomva a raktárról láthatunk bizonyos információkat
+(gomb) Szerkesztés - Ha egy termék ki van jelölve, akkor ezt a gombot megnyomva tudjuk az egyes értékeit módosítani
+(gomb) Bejövõ rendelések - Ezt a gombot megnyomva válthatunk arra a felületre, ahol a bejövõ rendeléseket láthatjuk
+(gomb) Megrendelések - Ezt a gombot megnyomva válthatunk arra a felületre, ahol a saját megrendeléseinket láthatjuk
+(gomb) Új Termék - megnyomva egy új felület fog megnyílni, amelyen keresztül új terméket fogunk tudni felvenni a rendszerbe
+(gomb) Új beszállító -  megnyomva egy új felület fog megnyílni, amelyen keresztül új terméket fogunk tudni felvenni a rendszerbe
+(gomb) Jelentés létrehozása - megnyomva létrehozzuk a jelentés fileket. 
+
+(rádió gombok) - csoport
+-Ár
+-Azonosító
+-Mennyiség
+-Beszállító
+
+Egyiket kijelölve szûkíthetjük le a keresést a kiválasztott mezõre
+
+(Szöveges beviteli mezõ) a keresés gomb mellett
+Ide írhatunk be értékeket vagy kifejezéseket, ha keresni szeretnénk a raktárban
+(gomb) Keresés - Megnyomva a beírt kifejezést, és a kiválasztott mezõ alapján megkeresi a terméket
+
+(rádió gombok) - csoport
+-Összes termék
+-Megrendelendõ termék
+
+Egyiket kiválaszta változtathatjuk meg a megjelenítési módot
+-Összes termék - A raktáron található összes termék kilistázása
+-Megrendelendõ termék- Azon termékek listázása, melyeket meg kell rendelni
