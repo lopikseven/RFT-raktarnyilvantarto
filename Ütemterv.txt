@@ -1,0 +1,27 @@
+Ütemterv a raktár nyilvántartó program fejlesztéséhez
+
+-A Github felületén issues-ekben is megtalálható ez az ütemterv-
+
+-Háttér adatbázis létrehozása
+-Saját osztály (Termékek) létrehozása és kidolgozása
+-hibakezelés: Termékek osztály esetlegesen felmerülõ hiba kifagyás nélküli megoldása
+-Adatbázis összekapcsolása a programmal + adatbeolvasás
+-Hibakezelés az adatbázis beolvasása közben. (kifagyás kezelés)
+-A raktár tartalmának megjelenítése a képernyõn, az elemek kiválaszthatóak
+-Eseménykezelés : Raktár jelentés létrehozása
+-Eseménykezelés : Megrendelés jelentés létrehozása
+-Saját osztály (Megrendelõ) létrehozása és kidolgozása
+-Megrendelendõ termékekre való szûrés megvalósítása
+-Eseménykezelés: Új termék felvétele a rendszerbe egy gomb segítségével
+-Eseménykezelés: Meglévõ terméket kijelölve módosítható legyenek az adatai
+-Eseménykezelés: Meglévõ terméket kijelölve el tudjuk távolítani a rendszerbõl
+-Eseménykezelés: Raktár állapota gombra kattintva a raktárról írjunk ki információkat
+-Rendelések osztály megírása
+
+-Eseménykezelés: Meglévõ termékre kattintva tudjunk rendelni az adott termékbõl és ezt adjuk hozzá a rendelésekhez
+-Eseménykezelés: bejövõ rendelések gombra kattintva jelenítsük meg a bejövõ rendeléseket
+-Eseménykezelés: Megrendelések gombra kattintva jelenítsük meg az általunk megrendelt termékek adatait
+
+-Rádió gombok: Összes termék / megrendelendõ nézet közti váltás biztosítása
+-Keresési funkció beépítése (keresni lehet Ár, Azonosító, Mennyiség, Beszállító alapján)
+
