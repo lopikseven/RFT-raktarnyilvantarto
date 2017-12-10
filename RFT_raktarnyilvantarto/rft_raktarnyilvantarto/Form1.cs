@@ -50,7 +50,7 @@ namespace rft_raktarnyilvantarto
             //Termékek
             OleDbCommand Command = new OleDbCommand();
             Command.Connection = Connect;
-            Command.CommandText = "SELECT Vonalkod, Megnevezes, Tipus, Raktar_db, Minimum_db, Megrendelo FROM Termek";
+            Command.CommandText = "SELECT Id, Vonalkod, Megnevezes, Tipus, Raktar_db, Minimum_db, Megrendelo FROM Termek";
 
             OleDbDataReader Reader;
             try
@@ -71,12 +71,13 @@ namespace rft_raktarnyilvantarto
             {
                 while (Reader.Read())
                 {
-                    atm.Vonalkod = Reader[0].ToString();
-                    atm.Nev = Reader[1].ToString();
-                    atm.Tipus = Reader[2].ToString();
-                    atm.Raktar_db = Convert.ToInt32(Reader[3].ToString());
-                    atm.Min_db = Convert.ToInt32(Reader[4].ToString());
-                    atm.Megrendelok.Add(Convert.ToInt32(Reader[5].ToString()));
+                    atm.Id = Convert.ToInt32(Reader[0].ToString());
+                    atm.Vonalkod = Reader[1].ToString();
+                    atm.Nev = Reader[2].ToString();
+                    atm.Tipus = Reader[3].ToString();
+                    atm.Raktar_db = Convert.ToInt32(Reader[4].ToString());
+                    atm.Min_db = Convert.ToInt32(Reader[5].ToString());
+                    atm.Megrendelok.Add(Convert.ToInt32(Reader[6].ToString()));
 
                     Termekek.Add(atm);
 

@@ -8,6 +8,13 @@ namespace rft_raktarnyilvantarto
 {
     class Termek
     {
+        private int id;
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
         private string vonalkod;
         public string Vonalkod
         {
@@ -106,6 +113,7 @@ namespace rft_raktarnyilvantarto
         // Konstruktorok
         public Termek()
         {
+            Id = 0;
             Vonalkod = "0000000000000";
             Nev = "atm";
             Tipus = "";
@@ -130,8 +138,9 @@ namespace rft_raktarnyilvantarto
             this.Min_db = Min_db;
         }
 
-        public Termek(string Vonalkod, string Nev, string Tipus, int Raktar_db, int Min_db):this(Vonalkod,Nev,Raktar_db,Min_db)
+        public Termek(int Id, string Vonalkod, string Nev, string Tipus, int Raktar_db, int Min_db):this(Vonalkod,Nev,Raktar_db,Min_db)
         {
+            this.Id = Id;
             this.Tipus = Tipus;
         }
     }
