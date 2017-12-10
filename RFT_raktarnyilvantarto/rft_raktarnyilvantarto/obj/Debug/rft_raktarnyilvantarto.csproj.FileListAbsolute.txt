@@ -40,3 +40,4 @@ C:\Users\dmark\Desktop\BeadandóNyilvántartó2\RFT-raktarnyilvantarto\RFT_rakta
 C:\Users\dmark\Desktop\BeadandóNyilvántartó2\RFT-raktarnyilvantarto\RFT_raktarnyilvantarto\rft_raktarnyilvantarto\obj\Debug\rft_raktarnyilvantarto.csproj.CoreCompileInputs.cache
 C:\Users\dmark\Desktop\BeadandóNyilvántartó2\RFT-raktarnyilvantarto\RFT_raktarnyilvantarto\rft_raktarnyilvantarto\obj\Debug\rft_raktarnyilvantarto.exe
 C:\Users\dmark\Desktop\BeadandóNyilvántartó2\RFT-raktarnyilvantarto\RFT_raktarnyilvantarto\rft_raktarnyilvantarto\obj\Debug\rft_raktarnyilvantarto.pdb
+C:\Users\dmark\Desktop\BeadandóNyilvántartó2\RFT-raktarnyilvantarto\RFT_raktarnyilvantarto\rft_raktarnyilvantarto\obj\Debug\rft_raktarnyilvantarto.Form3.resources

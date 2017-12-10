@@ -18,6 +18,7 @@ namespace rft_raktarnyilvantarto
 
         static List<Termek> Termekek = new List<Termek>();
         static List<Megrendelo> Megrendelok = new List<Megrendelo>();
+        static List<Megrendelesek> Megrendelesek = new List<rft_raktarnyilvantarto.Megrendelesek>();
 
         public Form1()
         {

@@ -60,5 +60,10 @@ namespace rft_raktarnyilvantarto
             this.Close();
             Program.MainForm1.Show();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
