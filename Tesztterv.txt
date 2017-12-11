@@ -1,0 +1,24 @@
+Tesztterv
+
+1 Teszt:
+Tesztelendõ: Új termék gomb,
+A gomb lenyomására meg kell jelennie egy ablaknak ahol kéri:
+-Vonalkód: csak szám formátumú megengedett, nem maradhat üresen
+-Megnvezezés: szöveg és betû is megengedett, nem maradhat üresen
+-Típus: szöveg és betû is megengedett, nem maradhat üresen
+-Raktár (db): csak egész szám megengedett nem lehet kevesebb mint 0, ha üresen marad az alapértelmezett a 0
+-Minimum (db): csak egész szám megengedett nem lehet kevesebb mint 0, ha üresen marad az alapértelmezett a 0
+-Felvétel gomb: A beírt adatokat hozzá kell adni az adatbázishoz
+
+2 Teszt:
+Új beszállító gomb,
+A gomb lendyomására egy ablaknak kell megjelennie ahol kéri:
+-Cég név: szöveg és betû is megengedett, nem maradhat üresen
+-Weboldal: csak www.*.* formátum megengedett, maradhat üresen
+-telefon: az elsõ karakter "+" utána csak számok szerepelhetnek
+-e-mail: csak *****@*****.** formátum megengedett nem maradhat üresen
+-cím: szöveg és szám is szerepelhet, nem maradhat üresen
+
+3 Teszt:
+Lejárt megrendelések gomb,
+kilistázza azokat a megrendeléseket amelyekek nem érkeztek be és a beérkezési hatáideje régebbi a mai napnál. 
