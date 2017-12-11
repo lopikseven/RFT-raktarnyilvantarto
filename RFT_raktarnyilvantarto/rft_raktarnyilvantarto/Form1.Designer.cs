@@ -46,6 +46,15 @@
             this.osszes_radio = new System.Windows.Forms.RadioButton();
             this.szerkesztes_button = new System.Windows.Forms.Button();
             this.lb_termekek = new System.Windows.Forms.ListBox();
+            this.lb_termek_text = new System.Windows.Forms.Label();
+            this.lb_nev_text = new System.Windows.Forms.Label();
+            this.lb_tipus_text = new System.Windows.Forms.Label();
+            this.lb_raktar_text = new System.Windows.Forms.Label();
+            this.lb_minimum_text = new System.Windows.Forms.Label();
+            this.lb_raktaron = new System.Windows.Forms.Label();
+            this.lb_minimum = new System.Windows.Forms.Label();
+            this.lb_megnevezes = new System.Windows.Forms.Label();
+            this.lb_tipus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rendelesek_button
@@ -224,15 +233,100 @@
             this.lb_termekek.ItemHeight = 31;
             this.lb_termekek.Location = new System.Drawing.Point(12, 195);
             this.lb_termekek.Name = "lb_termekek";
-            this.lb_termekek.Size = new System.Drawing.Size(708, 314);
+            this.lb_termekek.Size = new System.Drawing.Size(708, 252);
             this.lb_termekek.TabIndex = 20;
+            this.lb_termekek.SelectedIndexChanged += new System.EventHandler(this.lb_termekek_SelectedIndexChanged);
             this.lb_termekek.MouseEnter += new System.EventHandler(this.lb_termekek_MouseEnter);
+            // 
+            // lb_termek_text
+            // 
+            this.lb_termek_text.Location = new System.Drawing.Point(12, 450);
+            this.lb_termek_text.Name = "lb_termek_text";
+            this.lb_termek_text.Size = new System.Drawing.Size(140, 23);
+            this.lb_termek_text.TabIndex = 38;
+            this.lb_termek_text.Text = "Termék adatai";
+            // 
+            // lb_nev_text
+            // 
+            this.lb_nev_text.Location = new System.Drawing.Point(30, 486);
+            this.lb_nev_text.Name = "lb_nev_text";
+            this.lb_nev_text.Size = new System.Drawing.Size(122, 17);
+            this.lb_nev_text.TabIndex = 40;
+            this.lb_nev_text.Text = "Megnevezés:";
+            // 
+            // lb_tipus_text
+            // 
+            this.lb_tipus_text.Location = new System.Drawing.Point(30, 517);
+            this.lb_tipus_text.Name = "lb_tipus_text";
+            this.lb_tipus_text.Size = new System.Drawing.Size(69, 17);
+            this.lb_tipus_text.TabIndex = 41;
+            this.lb_tipus_text.Text = "Típus:";
+            // 
+            // lb_raktar_text
+            // 
+            this.lb_raktar_text.Location = new System.Drawing.Point(274, 486);
+            this.lb_raktar_text.Name = "lb_raktar_text";
+            this.lb_raktar_text.Size = new System.Drawing.Size(71, 17);
+            this.lb_raktar_text.TabIndex = 42;
+            this.lb_raktar_text.Text = "Raktáron:";
+            // 
+            // lb_minimum_text
+            // 
+            this.lb_minimum_text.Location = new System.Drawing.Point(277, 517);
+            this.lb_minimum_text.Name = "lb_minimum_text";
+            this.lb_minimum_text.Size = new System.Drawing.Size(71, 17);
+            this.lb_minimum_text.TabIndex = 43;
+            this.lb_minimum_text.Text = "Minimum:";
+            // 
+            // lb_raktaron
+            // 
+            this.lb_raktaron.AutoSize = true;
+            this.lb_raktaron.Location = new System.Drawing.Point(350, 486);
+            this.lb_raktaron.Name = "lb_raktaron";
+            this.lb_raktaron.Size = new System.Drawing.Size(13, 17);
+            this.lb_raktaron.TabIndex = 45;
+            this.lb_raktaron.Text = "-";
+            // 
+            // lb_minimum
+            // 
+            this.lb_minimum.AutoSize = true;
+            this.lb_minimum.Location = new System.Drawing.Point(350, 517);
+            this.lb_minimum.Name = "lb_minimum";
+            this.lb_minimum.Size = new System.Drawing.Size(13, 17);
+            this.lb_minimum.TabIndex = 46;
+            this.lb_minimum.Text = "-";
+            // 
+            // lb_megnevezes
+            // 
+            this.lb_megnevezes.Location = new System.Drawing.Point(158, 486);
+            this.lb_megnevezes.Name = "lb_megnevezes";
+            this.lb_megnevezes.Size = new System.Drawing.Size(130, 17);
+            this.lb_megnevezes.TabIndex = 47;
+            this.lb_megnevezes.Text = "-";
+            this.lb_megnevezes.Click += new System.EventHandler(this.lb_megnevezes_Click);
+            // 
+            // lb_tipus
+            // 
+            this.lb_tipus.Location = new System.Drawing.Point(128, 517);
+            this.lb_tipus.Name = "lb_tipus";
+            this.lb_tipus.Size = new System.Drawing.Size(128, 17);
+            this.lb_tipus.TabIndex = 48;
+            this.lb_tipus.Text = "-";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 531);
+            this.ClientSize = new System.Drawing.Size(737, 592);
+            this.Controls.Add(this.lb_tipus);
+            this.Controls.Add(this.lb_megnevezes);
+            this.Controls.Add(this.lb_minimum);
+            this.Controls.Add(this.lb_raktaron);
+            this.Controls.Add(this.lb_minimum_text);
+            this.Controls.Add(this.lb_raktar_text);
+            this.Controls.Add(this.lb_tipus_text);
+            this.Controls.Add(this.lb_nev_text);
+            this.Controls.Add(this.lb_termek_text);
             this.Controls.Add(this.rendelesek_button);
             this.Controls.Add(this.mennyiseg_radio);
             this.Controls.Add(this.ar_radio);
@@ -280,6 +374,15 @@
         private System.Windows.Forms.RadioButton osszes_radio;
         private System.Windows.Forms.Button szerkesztes_button;
         private System.Windows.Forms.ListBox lb_termekek;
+        private System.Windows.Forms.Label lb_termek_text;
+        private System.Windows.Forms.Label lb_nev_text;
+        private System.Windows.Forms.Label lb_tipus_text;
+        private System.Windows.Forms.Label lb_raktar_text;
+        private System.Windows.Forms.Label lb_minimum_text;
+        private System.Windows.Forms.Label lb_raktaron;
+        private System.Windows.Forms.Label lb_minimum;
+        private System.Windows.Forms.Label lb_megnevezes;
+        private System.Windows.Forms.Label lb_tipus;
     }
 }
 

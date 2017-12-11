@@ -205,6 +205,10 @@ namespace rft_raktarnyilvantarto
             if (rendelendo_radio.Checked == true)
             {
                 MegrendelendoTermekekMegjelenitese();
+                lb_megnevezes.Text = "-";
+                lb_tipus.Text = "-";
+                lb_raktaron.Text = "-";
+                lb_minimum.Text = "-";
             }
         }
 
@@ -213,6 +217,10 @@ namespace rft_raktarnyilvantarto
             if (osszes_radio.Checked == true)
             {
                 OsszesTermekMegjelenitese();
+                lb_megnevezes.Text = "-";
+                lb_tipus.Text = "-";
+                lb_raktaron.Text = "-";
+                lb_minimum.Text = "-";
             }
         }
 
@@ -308,6 +316,27 @@ namespace rft_raktarnyilvantarto
                 Program.UjTermek = new Termek();
                 Program.MenteniKell = false;
             }
+        }
+
+        private void lb_termekek_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lb_termekek.SelectedIndex != -1)
+            {
+                //kikeresni
+                lb_megnevezes.Text = "Valami";
+            }
+            else
+            {
+                lb_megnevezes.Text = "-";
+                lb_tipus.Text = "-";
+                lb_raktaron.Text = "-";
+                lb_minimum.Text = "-";
+            }
+        }
+
+        private void lb_megnevezes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
