@@ -175,7 +175,7 @@ namespace rft_raktarnyilvantarto
             {
                 MessageBox.Show("Hiba az adatbázisban! Nem megfelelő rekord a Megrendelesek táblában!");
                 Application.Exit();
-                return;
+                 return;
             }
 
             Reader.Close();
