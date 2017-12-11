@@ -1,0 +1,23 @@
+Megvalósíthatósági tanulmány
+
+A projekt célja egy kiskereskedés raktárkészletének nyilvántartása.
+Jelenleg egy excel táblában végzik a nyilvántartást, ami nagyban lassítja a 
+munkájukat, ezáltal csúszhatnak a kiszállításokkal, ha nincs készleten a megrendelt áru.
+
+A program felhasználóbarát kezelõfelülettel kell rendelkeznie és letisztultnak kell lennie, hogy
+akárki könnyen megtanulhassa használatát.
+
+A piacon kapható kész termékek, sok olyan funkciót tartalmazhatnak, amelyeket a vállalkozás nem használna
+ki, ezzel megbonyolítva a programot ami késõbb a használatát nehezítheti.
+
+A program létrehozásának költsége 145.000Ft, felülvizsgálata elõreláthatólag
+félévente szüksges amely díja napi 5600 Ft.
+
+A projekhez nincs szükség beruházni további fizikai eszközökre, a most megléfõ géppark
+teljesen alkalmas ezt a feladatot ellátni.
+
+A jelenlegi rendszerrel mért adatok alapján napi 4 órát foglalkoznak a rendelni szükséges
+anyagok kiválogatásával, ezt szeretnénk automatizálni ami költségcsökkentést 
+jelentene a vállalat számára.
+
+ 
