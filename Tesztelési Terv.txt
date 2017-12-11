@@ -1,0 +1,33 @@
+Tesztelési terv
+
+- Adatbázissal kapcsolatos dolgok
+
+A program mûködõképes és kezeli az elõforduló hibákat akkor is ha...
+
+Az adatbázishoz rossz elérési útvonal tartozik
+Az adatbázisnak rossz a megnevezése
+Az adatbázisban rossz táblanevek vannak megadva
+Az adatbázis tábláiban rossz mezõnevek szerepelnek
+Az adatbázis tábláiban rossz rekordok szerepelnek
+
+Az adatbázis jó elérési útvonallal van tárolva
+Az adatbázisnak jó a megnevezése
+Az adatbázisban jó táblanevek vannnak megadva
+Az adatbázis tábláiban jó mezõnevek szerepelnek
+Az adabázis tábláiban jó rekordok szerepelnek
+
+Nyomógombok
+
+-Jelentés létrehozása
+Megnyomása esetén létrejön a háttérben a 2 jelentés
+
+-Új termék
+Megnyomása esetén egy új form jelenik meg, ahol az új terméket lehet felvenni
+
+A program kezeli a hibát akkor, ha rossz vonalkódot adunk meg (nem EAN13-masat)
+A program kezeli a hibát hogyha a (Raktáron DB vagy Minimum DB) beviteli mezõbe nem számot adunk meg
+A program kezeli a hibát, hogyha egyik mezõt sem töltjük ki
+A program kezeli a hibát, hogyha nem adunk megnevezést
+
+A program helyesen mûködik hogyha minden mezõbe megfelelõ értéket írunk
+Megfelelõ mûködés: Az új terméket felveszi a rendszerbe, és visszalépünk a fõ felületre
