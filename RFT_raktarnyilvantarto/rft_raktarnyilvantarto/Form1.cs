@@ -129,13 +129,57 @@ namespace rft_raktarnyilvantarto
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Hiba az adatbázisban! Nem megfelelő rekord a Megrendelo táblában!");
+                Application.Exit();
+                return;
             }
 
             Reader.Close();
             Connect.Close();
 
+            //Megrendelések
+            Connect.Open();
+            Command = new OleDbCommand();
+            Command.Connection = Connect;
+            Command.CommandText = "SELECT Azon, MegrendeloId, TermekId, Darabszam, VarhatoErkezes FROM Megrendelesek";
+
+            try
+            {
+                Reader = Command.ExecuteReader();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hiba az adatbázisban! Nem megfelelő táblanév vagy mezőnév itt: Megrendelesek");
+                Application.Exit();
+                return;
+            }
+            Megrendelesek atm_megrendelesek = new Megrendelesek(0,0,0,0,0);
+
+            try
+            {
+                while (Reader.Read())
+                {
+                    atm_megrendelesek.Id = Convert.ToInt32(Reader[0].ToString());
+                    atm_megrendelesek.MegrendeloId = Convert.ToInt32(Reader[1].ToString());
+                    atm_megrendelesek.TermekId = Convert.ToInt32(Reader[2].ToString());
+                    atm_megrendelesek.Db = Convert.ToInt32(Reader[3].ToString());
+                    atm_megrendelesek.VarhatoErkezes = Convert.ToInt32(Reader[4].ToString());
+
+
+                    Megrendelesek.Add(atm_megrendelesek);
+
+                    atm_megrendelesek = new Megrendelesek(0,0,0,0,0);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hiba az adatbázisban! Nem megfelelő rekord a Megrendelesek táblában!");
+                Application.Exit();
+                return;
+            }
+
+            Reader.Close();
+            Connect.Close();
         }
 
         private void OsszesTermekMegjelenitese()
