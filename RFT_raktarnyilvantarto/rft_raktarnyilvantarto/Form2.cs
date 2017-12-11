@@ -50,7 +50,7 @@ namespace rft_raktarnyilvantarto
             //Termékek
             OleDbCommand Command = new OleDbCommand();
             Command.Connection = Connect;
-            Command.CommandText = "SELECT Vonalkod, Megnevezes, Tipus, Rendelt_db, Megrendelo, Rendeles_ideje, Beerkezes_ideje, Szallito, Beerkezett FROM Megrendelesek";
+            Command.CommandText = "SELECT Vonalkod, Megnevezes, Tipus, Rendelt_db, Megrendelo, Rendeles_ideje, Beerkezes_ideje, Szallito, Beerkezett FROM Rendelesek";
 
             OleDbDataReader Reader;
             try
@@ -60,7 +60,7 @@ namespace rft_raktarnyilvantarto
             catch (Exception)
             {
 
-                MessageBox.Show("Hiba az adatbázisban! Nem megfelelő táblanév vagy mezőnév itt:Megrendelések");
+                MessageBox.Show("Hiba az adatbázisban! Nem megfelelő táblanév vagy mezőnév itt:Rendelsek");
                 Application.Exit();
                 return; // Hogy ki is lépjen
             }
@@ -71,13 +71,15 @@ namespace rft_raktarnyilvantarto
             {
                 while (Reader.Read())
                 {
-                    rendeles.Vonalkod = Reader[0].ToString();
-                    rendeles.Nev = Reader[1].ToString();
-                    rendeles.Tipus = Reader[2].ToString();
-                    rendeles.Rendelt_db = Convert.ToInt32(Reader[3].ToString());
-                    rendeles.Rendelo = Reader[4].ToString();
-                    rendeles.Rendelesido = Convert.ToDateTime(Reader[5].ToString());
-                    rendeles.Erkezesido = Convert.ToDateTime(Reader[6].ToString());
+                    
+                        rendeles.Vonalkod = Reader[0].ToString();
+                        rendeles.Nev = Reader[1].ToString();
+                        rendeles.Tipus = Reader[2].ToString();
+                        rendeles.Rendelt_db = Convert.ToInt32(Reader[3].ToString());
+                        rendeles.Rendelo = Reader[4].ToString();
+                    
+                    rendeles.Rendelesido = Reader[5].ToString();
+                    rendeles.Erkezesido = Reader[6].ToString();
                     rendeles.Szallito = Reader[7].ToString();
                     rendeles.Beerkezet = Convert.ToBoolean(Reader[8].ToString());
 
@@ -102,14 +104,14 @@ namespace rft_raktarnyilvantarto
 
         }
 
-        private void lejartak_gomb_Click(object sender, EventArgs e)
-        {
-            listBox1.Items.Clear();
-            foreach (Rendelesek r in Rendelesek)
-            {
-                if (r.Beerkezet == false && r.Erkezesido <= DateTime.Today)
-                    listBox1.Items.Add(r.Nev + "-" + r.Tipus);
-            }
-        }
+        //private void lejartak_gomb_Click(object sender, EventArgs e)
+        //{
+        //    listBox1.Items.Clear();
+        //    foreach (Rendelesek r in Rendelesek)
+        //    {
+        //        if (r.Beerkezet == false && r.Erkezesido <= DateTime.Today)
+        //            listBox1.Items.Add(r.Nev + "-" + r.Tipus);
+        //    }
+        //}
     }
 }

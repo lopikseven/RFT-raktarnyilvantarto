@@ -8,13 +8,15 @@ namespace rft_raktarnyilvantarto
 {
     class Rendelesek : Termek
     {
+        string ma = DateTime.Today.ToString();
+        
         public Rendelesek(string Vonalkod, string Nev, string Tipus, int Rendelt_db)
             : base(Vonalkod, Nev, Tipus)
         {
             this.Rendelt_db = Rendelt_db;
         }
         public Rendelesek(string Vonalkod, string Nev, string Tipus, int Rendelt_db,
-                            string Rendelo, DateTime Rendelesido, DateTime Erkezesido,
+                            string Rendelo, string Rendelesido, string Erkezesido,
                             string Szallito, bool Beerkezett)
                             : this(Vonalkod, Nev, Tipus, Rendelt_db)
         {
@@ -45,24 +47,22 @@ namespace rft_raktarnyilvantarto
                 this.rendelo = value;
             }
         }
-        private DateTime rendelesido;
-        public DateTime Rendelesido
+        private string rendelesido;
+        public string Rendelesido
         {
             get { return rendelesido; }
             set
             {
-                if (value <= DateTime.Today) this.rendelesido = value;
-                else throw new Exception("Nem lehet a mai naptól későbbi rendelési dátum!");
+                this.rendelesido = value;
             }
         }
-        private DateTime erkezesido;
-        public DateTime Erkezesido
+        private string erkezesido;
+        public string Erkezesido
         {
             get { return erkezesido; }
             set
             {
-                if (value > DateTime.Today) this.erkezesido = value;
-                else throw new Exception("Nem lehet a mai naptól régebbi érkezési idő!");
+                this.erkezesido = value;
             }
         }
         private string szallito;
