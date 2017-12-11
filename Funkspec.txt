@@ -17,6 +17,15 @@
 	Gomb: Megrendelések kilistázása
 	Gomb: Lejárt határidejû megrendelések kilistázása
 
-
+-Új termék felvétele
 	
+	Szöveges bevieli mezõk:
+	-Új termék vonalkódja
+	-Új termék megnevezése
+	-Új termék típusa
+	-Új termék rakáron található darabszáma
+	-Új termék minimum darabszáma
+
+	Gomb
+	-Új termék felvétele
 	
