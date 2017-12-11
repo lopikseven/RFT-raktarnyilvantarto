@@ -132,6 +132,10 @@ namespace rft_raktarnyilvantarto
         {
             this.Raktar_db = Raktar_db;
         }
+        public Termek(string Vonalkod, string Nev, string Tipus) : this(Vonalkod, Nev)
+        {
+            this.Tipus = Tipus;
+        }
 
         public Termek(string Vonalkod, string Nev, int Raktar_db, int Min_db) : this(Vonalkod, Nev, Raktar_db)
         {
