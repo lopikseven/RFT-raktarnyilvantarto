@@ -23,6 +23,7 @@ Projekt terv
 	A projektben kevésbé vannak prioitás alapú feladatok.
 	A megrendelõ elvárja, hogy az összes kritériumnak 100 % ig megfeleljen a rendszer, hibamentesen
 	
+
 Üzleti szereplõk
 	A megrendelõ cél
 	Kiss Dániel
