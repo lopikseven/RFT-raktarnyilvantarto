@@ -1,14 +1,57 @@
 Nagyvonalú rendszerterv
 
+A rendszer célja
+	Hogy a megrendelõ igényeit kielégítse, a megvásárlás után pedig a megrendelõ alkalmazottai gondtalanul
+	tudják használni a szoftvert
+	-A megrendelõ cégen belüli raktár nyilvántartás problémáit megoldja
+	-A raktár jelenlegi állapota alapján a jelentések létrehozása
+	-A raktárban található termékek adminisztrálása
+		-Új termék felvétele
+		-Meglévõ termék adatainak módosítása, elérése
+Projekt terv
+	A projektet az ütemterv alapján hozzuk létre
+	Ott lépésenként le van írva, milyen lépés és fejlesztés után milyen feladatok várnak ránk
+	
+	A projekten dolgoznak
+	Kiss Dániel
+	Danisovszky Márk
 
-A követelményspecifikációban lefektetett szoftver kifejlesztését,
-olyan célból, hogy a megrendelõ megvásárolja a cégének a szoftvert azért, hogy az alkalmazottai használják.
+	Idõ:
+	 2017. Szeptember 25 tõl
+	 2018 Január 2 ig
 
-Az ütemterv alapján ütemezve minden lépést.
+	A projektben kevésbé vannak prioitás alapú feladatok.
+	A megrendelõ elvárja, hogy az összes kritériumnak 100 % ig megfeleljen a rendszer, hibamentesen
+	
+Üzleti szereplõk
+	A megrendelõ cél
+	Kiss Dániel
+	Danisovszky Márk
 
-A projekt kezdete: 2017. Szeptember 25
-A projekt átadásának határideje: 2018 Január 2
+Követelmények
+	A követelmények meghatározása a következõ dokumentumokban található:
+	Funkcionális Specifikáció
+	Követelmény specifikáció
 
-A programot C# Nyelven írva, .Net környezetben futtatva várjuk el.
+Funkcionális Terv
+	Megtalálható a Funkcionális specifikáció mellékletben
 
-Akik dolgoznak rajta: Kiss Dániel, Danisovszky Márk
+Fizikai Környezet
+	.NET környezetben fejlesztünk és .NET keretrendszer szükséges a kész szoftver használatához is
+
+Adatbázis terv
+	3 Fõbb tábla 
+	Termékek tábla
+	Megrendelõk tábla
+	Megrendelések tábla
+	
+	A Termékek - Megrendelõk tábla a Termék ID alapján vannak kapcsolatban egymással
+	A Megrendelések - Megrendelõk tábla a Megrendelõ ID alapján vannak kapcsolatban
+
+Teszt Terv
+	Megtalálható a Tesztelési terv mellékletben
+
+Telepítési terv
+	A szoftver telepítéséhez szükséges a következõk mindegyike
+	-Egy elõre telepített (legalább 2007-es) MS Access
+	
