@@ -1,6 +1,6 @@
 Árajánlat
 
-A szoftver fejlesztése közben minden egyes feladatra 1 napot szánunk.
+A szoftver fejlesztése közben, ami az ütemterv alapján zajlik minden egyes feladatra 1 napot szánunk.
 Ez azt jelenti, hogy az ütemterv alapján 26 ráfordított napot igényel a projekt.
 
 A célunk, hogy minden egyes dolgozott nap után 3 napos pihenõ idõszakot tartunk, ami persze fizetésmentes.
@@ -17,3 +17,13 @@ A projekten 2 ember dolgozik
 Az egy napi munkával töltött bérük forintban: 5600 Ft
 
 Árajánlat: 26 * 5600 = 145.000 Ft
+
+Ez az ár mellett biztosítunk a megrendelõnek 1 éves ingyenes hibajavítást.
+
+A hibajavítás nem jelent újabb funkciók fejlesztését, hanem az esetlegesen nem lekezelt hibák elõfordulásának
+a kijavítását foglalja magába.
+
+Hiba bejelentése után legfeljebb 30 napon belül kezdünk neki a hiba javításának, és a hiba nagyságától függõen
+1-5 nap alatt várható a hiba kijavíásának ideje
+
+Kritikus hiba fellépése esetén biztosítjuk az 5 napon belüli hibajavítást!

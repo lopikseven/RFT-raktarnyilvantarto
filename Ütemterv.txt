@@ -25,3 +25,5 @@
 -Rádió gombok: Összes termék / megrendelendõ nézet közti váltás biztosítása
 -Keresési funkció beépítése (keresni lehet Ár, Azonosító, Mennyiség, Beszállító alapján)
 
+Az egyes feladatok egy- egy napot vesznek igénybe. 
+Egy ütem elvégézse után 2-3 napos pihenõt lehet tartani. 
