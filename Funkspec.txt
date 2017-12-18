@@ -1,3 +1,7 @@
+A szoftver célja hogy a megrendelõ, akinek  az alkalmazottai fogják használni a programot, 
+nekik a munkájuk, azon belül is a raktározási feladatok elvégzésének megkönnyítése.
+Ezen felül másodlagos cél a megrendelõ cég megrendeléseinek a kezelését is lehetõvé tenni.
+
 -Választási lehetõség a Raktár és a Rendelések között
 
 -Raktár
