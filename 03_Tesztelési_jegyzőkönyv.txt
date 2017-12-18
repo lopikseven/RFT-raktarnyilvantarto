@@ -1,0 +1,17 @@
+Tesztelési jegyzõkönyv a tesztterv alapján
+
+Tesztelési azonosító: 03
+
+Feladat leírása                                                                          |Megfelelt
+
+megnyomni a gombot. Helyes mûködés: megjelenik egy új form.                              |   IGEN	
+Rossz vonalkódot megadni a vonalkód mezõbe(nem EAN13masat) a többi értéket jól kitölteni.|   IGEN	
+Helyes mûködés: felveszi a terméket az adatbázisba                                       |   IGEN
+Nem megfelelõ értéket megadni a Raktár DB mezõbe. Például szöveget                       |   IGEN
+Nem megfelelõ értéket megadni a Minimum DB mezõbe. Például szöveget                      |   IGEN
+minden mezõt üresen hagyni                                                               |   IGEN
+csak a megnevezés mezõt üresen hagyni                                                    |   IGEN
+Minden mezõt helyesen kitölteni                                                          |   IGEN
+
+A 03 azonosítóval rendelkezõ tesztem sikeresen teljesített a program.
+100 % os mûködés
