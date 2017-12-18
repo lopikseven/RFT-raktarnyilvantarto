@@ -264,7 +264,7 @@
             // 
             // lb_raktar_text
             // 
-            this.lb_raktar_text.Location = new System.Drawing.Point(274, 486);
+            this.lb_raktar_text.Location = new System.Drawing.Point(294, 486);
             this.lb_raktar_text.Name = "lb_raktar_text";
             this.lb_raktar_text.Size = new System.Drawing.Size(71, 17);
             this.lb_raktar_text.TabIndex = 42;
@@ -272,16 +272,16 @@
             // 
             // lb_minimum_text
             // 
-            this.lb_minimum_text.Location = new System.Drawing.Point(277, 517);
+            this.lb_minimum_text.Location = new System.Drawing.Point(297, 517);
             this.lb_minimum_text.Name = "lb_minimum_text";
-            this.lb_minimum_text.Size = new System.Drawing.Size(71, 17);
+            this.lb_minimum_text.Size = new System.Drawing.Size(97, 17);
             this.lb_minimum_text.TabIndex = 43;
             this.lb_minimum_text.Text = "Minimum:";
             // 
             // lb_raktaron
             // 
             this.lb_raktaron.AutoSize = true;
-            this.lb_raktaron.Location = new System.Drawing.Point(350, 486);
+            this.lb_raktaron.Location = new System.Drawing.Point(370, 486);
             this.lb_raktaron.Name = "lb_raktaron";
             this.lb_raktaron.Size = new System.Drawing.Size(13, 17);
             this.lb_raktaron.TabIndex = 45;
@@ -289,8 +289,7 @@
             // 
             // lb_minimum
             // 
-            this.lb_minimum.AutoSize = true;
-            this.lb_minimum.Location = new System.Drawing.Point(350, 517);
+            this.lb_minimum.Location = new System.Drawing.Point(402, 517);
             this.lb_minimum.Name = "lb_minimum";
             this.lb_minimum.Size = new System.Drawing.Size(13, 17);
             this.lb_minimum.TabIndex = 46;

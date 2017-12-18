@@ -29,6 +29,8 @@ namespace rft_raktarnyilvantarto
         {
             AdatbazisBeolvasasa("Database.accdb");
 
+            szerkesztes_button.Enabled = false;
+
             osszes_radio.Checked = true;
             OsszesTermekMegjelenitese();
         }
@@ -222,6 +224,8 @@ namespace rft_raktarnyilvantarto
                 lb_raktaron.Text = "-";
                 lb_minimum.Text = "-";
             }
+            szerkesztes_button.Enabled = false;
+
         }
 
         private void jelentes_button_Click(object sender, EventArgs e)
@@ -285,6 +289,7 @@ namespace rft_raktarnyilvantarto
 
         private void uj_termek_button_Click(object sender, EventArgs e)
         {
+            szerkesztes_button.Enabled = false;
             this.Hide();
             Form3 UjTermekForm = new Form3();
             UjTermekForm.Show();
@@ -318,20 +323,45 @@ namespace rft_raktarnyilvantarto
             }
         }
 
+        //Ha rákattintunk egy elemre a listából
         private void lb_termekek_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lb_termekek.SelectedIndex != -1)
             {
+                Termek atm = new Termek();
+
                 //kikeresni
-                lb_megnevezes.Text = "Valami";
+                lb_megnevezes.Text = Termekek[lb_termekek.SelectedIndex].Nev;
+                lb_tipus.Text = Termekek[lb_termekek.SelectedIndex].Tipus;
+                lb_raktaron.Text = Termekek[lb_termekek.SelectedIndex].Raktar_db.ToString();
+                lb_minimum.Text = Termekek[lb_termekek.SelectedIndex].Min_db.ToString();
+
+                szerkesztes_button.Enabled = true;
             }
             else
             {
+                szerkesztes_button.Enabled = false;
                 lb_megnevezes.Text = "-";
                 lb_tipus.Text = "-";
                 lb_raktaron.Text = "-";
                 lb_minimum.Text = "-";
             }
+        }
+
+        //Elem keresése név és típus alapján
+        private Termek TermekFromNevTipus(string nev, string tipus)
+        {
+            Termek vissza = new Termek();
+
+            foreach (Termek T in Termekek)
+            {
+                if (T.Nev == nev && T.Tipus == tipus)
+                {
+                    return T;
+                }
+            }
+
+            return vissza;
         }
 
         private void lb_megnevezes_Click(object sender, EventArgs e)
