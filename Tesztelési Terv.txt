@@ -1,5 +1,6 @@
 Tesztelési terv
 
+Tesztelési azonosító: 01
 - Adatbázissal kapcsolatos dolgok
 
 A program mûködõképes és kezeli az elõforduló hibákat akkor is ha...
@@ -10,6 +11,13 @@ Az adatbázisban rossz táblanevek vannak megadva
 Az adatbázis tábláiban rossz mezõnevek szerepelnek
 Az adatbázis tábláiban rossz rekordok szerepelnek
 
+EHHEZ
+Teszt: az adatbázisnak rossz elérési útvonalat adunk meg
+Teszt: az adatbázist rossz néven mentjük le 
+Teszt: az adatbázisban rossz táblanevet adunk meg
+Teszt: az adatbázis tábláiban bárhol rossz mezõnevet adunk meg
+Teszt: az adabázis tábláiban bárhová feveszünk egy rossz rekordot
+
 Az adatbázis jó elérési útvonallal van tárolva
 Az adatbázisnak jó a megnevezése
 Az adatbázisban jó táblanevek vannnak megadva
@@ -18,9 +26,11 @@ Az adabázis tábláiban jó rekordok szerepelnek
 
 Nyomógombok
 
+Tesztelési azonosító: 02
 -Jelentés létrehozása
 Megnyomása esetén létrejön a háttérben a 2 jelentés
 
+Tesztelési azonosító: 03
 -Új termék
 Megnyomása esetén egy új form jelenik meg, ahol az új terméket lehet felvenni
 
@@ -31,3 +41,12 @@ A program kezeli a hibát, hogyha nem adunk megnevezést
 
 A program helyesen mûködik hogyha minden mezõbe megfelelõ értéket írunk
 Megfelelõ mûködés: Az új terméket felveszi a rendszerbe, és visszalépünk a fõ felületre
+
+EHHEZ
+Teszt: megnyomni a gombot. Helyes mûködés: megjelenik egy új form.
+Teszt: Rossz vonalkódot megadni a vonalkód mezõbe(nem EAN13masat) a többi értéket jól kitölteni. Heyes mûködés: felveszi a terméket az adatbázisba
+Teszt: Nem megfelelõ értéket megadni a Raktár DB mezõbe. Például szöveget
+Teszt: Nem megfelelõ értéket megadni a Minimum DB mezõbe. Például szöveget
+Teszt: minden mezõt üresen hagyni
+Teszt: csak a megnevezés mezõt üresen hagyni
+Teszt: Minden mezõt helyesen kitölteni
