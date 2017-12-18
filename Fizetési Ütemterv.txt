@@ -1,0 +1,10 @@
+Fizetési ütemterv
+
+Fizetési ütemezés
+
+A fejlesztési tételek számlázása a következõ ütemezés alapján történik
+	-A teljes összes 30 %-a a bemutatott dokumentumok elfogadása után
+	-A teljes összeg 50 %-a a szoftver tesztelésének sikeres befejezésekor
+	-A teljes összeg 30 %-a a végátvételkor
+
+Az összeg kifizetése 10 munkanapon belül számla ellenében esedékes, a vonatkozó átvátel vagy ütem teljesítése után.
