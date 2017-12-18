@@ -1,5 +1,10 @@
 Nagyvonalú rendszerterv
 
+Bevezetés
+
+A dokumentum Kiss Dániel és Danisovszky Márk közös projektjének a keretein belül létrejött szoftvert specifikálja
+
+
 A rendszer célja
 	Hogy a megrendelõ igényeit kielégítse, a megvásárlás után pedig a megrendelõ alkalmazottai gondtalanul
 	tudják használni a szoftvert
@@ -29,10 +34,18 @@ Projekt terv
 	Kiss Dániel
 	Danisovszky Márk
 
+Mérföldkövek
+	Megtalálható az ütemtervben
+
 Követelmények
 	A követelmények meghatározása a következõ dokumentumokban található:
 	Funkcionális Specifikáció
 	Követelmény specifikáció
+
+Nem funcionális követelmények
+	C# nyelven íródjon és .NET környezetben lehessen futtatni
+	minimum 600 x 400 as felbontás támogatása
+	Akadálymentes, könnyen kezelhetõ felület
 
 Funkcionális Terv
 	Megtalálható a Funkcionális specifikáció mellékletben
@@ -52,6 +65,9 @@ Adatbázis terv
 Teszt Terv
 	Megtalálható a Tesztelési terv mellékletben
 
+Hibakezelés
+	Megtalálható a hibakezelési terv mellékletben
+	
 Telepítési terv
 	A szoftver telepítéséhez szükséges a következõk mindegyike
 	-Egy elõre telepített (legalább 2007-es) MS Access
