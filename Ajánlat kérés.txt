@@ -1,0 +1,21 @@
+Ajánlat kérés
+
+A Nevenincs zrf megrendelést ad egy raktár nyilvántartó szoftver elkészítésére.
+A szoftvert a Nevenincs zrt foglalkoztatottai fogják használni, a raktári nyilvántartás
+megkönnyítésére.
+Emellett szeretnék hogy a szoftver az elõforduló raktározási feladaokat is megkönnyítse.
+Elõrelátható késõbbi továbbfejlesztés: a megrendelések kezelése is
+
+Ajánlatkérõ bemutatása:
+
+Cég neve: Nevenincs zrt
+Üzemel: 2004.04.11 - tõl 
+Cím: 2660 Balassagyarmat Hunyadi u 2
+Kapcsolattartói telefon: 30/1234567
+
+A cégen belül gyártási folyamatok zajlanak.
+
+Követelményspecifikáció
+-Lásd követelményspecifikáció
+
+Készítette: Danisovszky Márk
