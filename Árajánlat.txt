@@ -1,29 +1,105 @@
 Árajánlat
 
-A szoftver fejlesztése közben, ami az ütemterv alapján zajlik minden egyes feladatra 1 napot szánunk.
-Ez azt jelenti, hogy az ütemterv alapján 26 ráfordított napot igényel a projekt.
 
-A célunk, hogy minden egyes dolgozott nap után 3 napos pihenõ idõszakot tartunk, ami persze fizetésmentes.
-Így a projektet összesen legfeljebb 104 nap alatt tudjuk átadni.
+Tartalomjegyzék
+--
+1. bevezetés
+2. Vezetõi nyilatkozat
+3. Feladat bemutatása
+5. projektterv
+6. funkcionális specifikáció
+7. ütemterv
+8. Átadási határidõ és árajánlat az egyes csomagokra nézve
+9. Árajánlat érvényessége, szerzõdési feltételek
+-
 
-A projekt kezdete: 2017 Szeptemben 25
+1. bevezetés
 
-A projekt leadásának határideje: 2018 Január 2
+	A jelen fejlesztési projekt célja a raktári nyilvántartás és raktározási feladatok elvégézésének megkönnyebbítése
+	emellett a megrendelések kezelése mind befelé, mind kifelé történõ irányban.
 
-A projekten 2 ember dolgozik
--Kiss Dániel
--Danisovszky Márk
+2. Vezetõi nyilatkozat
+	
+	A projekt tagjai megerõsítik, hogy a jelen dokumentumban szereplõ Funkcionális Specifikáció elegendõ (kellõ és pontos) információt tartalmaz.
+	A projektben résztvevõ tagok nem jogosultak semmilyen további fizetségre, sem pedig nem mentesülnek a jelen dokumentumnak megfelelõ semmilyen felelõsség alól amiatt,
+	ha bármilyen módon félreértelmezés történik a Funkcionális Specifikációt illetõen.
+	Az együttmûködés szellemében, hogy ha bármelyik fél bármilyen feladattal vagy véleményeltéréssel kerül szembe a projekt során, akkor mindegyikük megkísérli azt biztosítani,
+	hogy a véleményeltérés kölcsönösen elfogadható megoldást nyerjen, gyorsan, ésszerûen és szükségtelen fennakadás nélkül.
 
-Az egy napi munkával töltött bérük forintban: 5600 Ft
+3. Feladat bemutatása
 
-Árajánlat: 26 * 5600 = 145.000 Ft
+	A projekt feladatot az összes mellékelt dokumentum tartalmazza, legfontosabb közöllük a követelményspecifikáció
+	amiben pontosan le van írva a követelmény, hogy milyen szoftvert kell fejleszteni
 
-Ez az ár mellett biztosítunk a megrendelõnek 1 éves ingyenes hibajavítást.
+5. projektterv
 
-A hibajavítás nem jelent újabb funkciók fejlesztését, hanem az esetlegesen nem lekezelt hibák elõfordulásának
-a kijavítását foglalja magába.
+	Projekt ütemezés
 
-Hiba bejelentése után legfeljebb 30 napon belül kezdünk neki a hiba javításának, és a hiba nagyságától függõen
-1-5 nap alatt várható a hiba kijavíásának ideje
+	A projekt ütemezése a mellékelt ütemtervben található
 
-Kritikus hiba fellépése esetén biztosítjuk az 5 napon belüli hibajavítást!
+6. Funkcionális specifikáció
+
+	A funkcionális specifikáció a mellékelt funcionális specifikáció.txtben található
+
+7. ütemterv
+
+	A szoftver fejlesztése közben, ami az ütemterv alapján zajlik minden egyes feladatra 1 napot szánunk.
+	Ez azt jelenti, hogy az ütemterv alapján 26 ráfordított napot igényel a projekt.
+
+	A célunk, hogy minden egyes dolgozott nap után 3 napos pihenõ idõszakot tartunk, ami persze fizetésmentes.
+	Így a projektet összesen legfeljebb 104 nap alatt tudjuk átadni.
+
+	A projekt kezdete: 2017 Szeptemben 25
+
+	A projekt leadásának határideje: 2018 Január 2
+
+	A projekten 2 ember dolgozik
+	-Kiss Dániel
+	-Danisovszky Márk
+
+	A pontos ütemterv megtalálható a mellékelt ütemterv.txt-ben
+
+8. Átadási határidõ és árajánlat az egyes csomagokra nézve
+	
+	A projekt kezdete: 2017 Szeptember 25.
+
+	A projekten 2 ember dolgozik, az ütemterv alapján pontosan 26 napot igényel a projekt befejezése.
+	A pihenõidõkkel számolva ( minden nap után 3 napos pihenõ):
+
+	A projekt végleges, teljes értékû szoftver leadásának határideje: 2018 Január 2
+
+	A projektet nem osszuk csomagokra.
+
+	Napi 8 órában való dolgozás esetében, 700 Ft-os órabérben a következõk :
+	26 * 8 * 700 = 145.600 Ft
+
+	A fizetési ütemezésben leírtak alapján a projekt fejlesztését követõen az összeg 30 %-át elõre küldve
+	Azaz 43.680 Ft elküldése után megkezdõdik a szoftver fejlesztése
+
+	Ezután, a sikeres hibakeresések lezárása után az összeg 50 %-át 
+	Azaz 72.800 Ft- ot 
+
+	Majd pedig a végleges szoftver átadása után a maradék összeget
+	Azaz 29.300 Ft ot várunk
+	
+9. Árajánlat érvényessége, szerzõdési feltételek
+
+	Az árajánlat érvényes: 2017.10.31
+
+	Szerzõdési feltételek:
+
+    	a)A csomag megfelel az Átvételi Alapfeltételeknek (azaz a Részletes Funkcionális Specifikációnak, a Rendszertervezési Dokumentumnak, a Tesztelés Tervének és a felek által a Rendszertervezési Dokumentum átvétele után elfogadott egyéb dokumentumoknak).
+    	b)A hozzá kapcsolódó dokumentáció átadása teljes körû és megfelelõ. A Tesztelés sikeres végrehajtása vezet el a Végátvételhez.
+
+	A Dokumentum átadását követõ 5 munkanapos idõszakon belül az Átvevõ félnek azt át kell néznie. A kézhez vételt követõ 5 munkanapon belül írásban kell értesíteni a Dokumentummal kapcsolatban felmerült megjegyzéseket mindazon észrevételrõl, amelyben úgy tekinti,
+	hogy a Dokumentum nem elégíti ki a jelen dokumentumban részletezett követelményeket, és a vonatkozó dokumentumokat elkészítik és jóváhagyják a Felek.
+
+	Ez az ár mellett biztosítunk a megrendelõnek 1 éves ingyenes hibajavítást.
+
+	A hibajavítás nem jelent újabb funkciók fejlesztését, hanem az esetlegesen nem lekezelt hibák elõfordulásának
+	a kijavítását foglalja magába.
+
+	Hiba bejelentése után legfeljebb 30 napon belül kezdünk neki a hiba javításának, és a hiba nagyságától függõen
+	1-5 nap alatt várható a hiba kijavíásának ideje
+
+	Kritikus hiba fellépése esetén biztosítjuk az 5 napon belüli hibajavítást!
