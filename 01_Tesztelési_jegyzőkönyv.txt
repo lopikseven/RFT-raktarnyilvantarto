@@ -1,0 +1,14 @@
+Tesztelési jegyzõkönyv a tesztterv alapján
+
+Tesztelési azonosító: 01 
+
+Feladat leírása                                                | Megfelelt
+
+az adatbázisnak rossz elérési útvonalat adunk meg              |   IGEN
+az adatbázist rossz néven mentjük le                           |   IGEN
+az adatbázisban rossz táblanevet adunk meg                     |   IGEN
+az adatbázis tábláiban bárhol rossz mezõnevet adunk meg        |   IGEN
+az adabázis tábláiban bárhová feveszünk egy rossz rekordot     |   IGEN
+
+A 01 Azonosítóval rendelkezõ teszten sikeresen teljesített a program.
+100 % os mûködés
