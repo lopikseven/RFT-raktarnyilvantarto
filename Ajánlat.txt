@@ -1,0 +1,19 @@
+Ajánlat
+
+Funkció
+
+	A szoftver több felületváltást fog végrehajtani.
+
+	Egy fõ felület, ahol az aktuális raktárat (egy háttér adatbázis alapján)
+	kezelni lehet. Itt lehet a termékeket managelni. Új termékeket felvenni,
+	a meglévõknek az adatait módosítani. Vagy esetleg jelentés file-t létrehozni
+
+	Egy új termék létrehozása felület, amin keresztül meg lehet valósítani a 
+	raktárba új terméket felvevõ eseményt. Itt kell megadni az új termék adatait
+	és az alapján felvenni a rendszerbe és a háttér adatbázisba
+
+Stílus
+
+A szoftver stílusát a Visual Studio- Windows Forms beépített stílusa fogja adni
+Hagyományos gombok, hagyományos beviteli mezõkkel.
+A felületek felépítése könnyed lesz, azon könnyá lesz az eligazodás. 
