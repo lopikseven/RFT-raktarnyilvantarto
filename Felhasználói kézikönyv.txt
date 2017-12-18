@@ -1,5 +1,7 @@
 Felhasználói leírás a program mûködéséhez
 
+A program a raktározási feladatok elvégzését teszi lehetõvé és könnyíti meg azt.
+
 A program elindítása után egy felület fogad minket, amin különbözõ gombokat látunk.
 
 (gomb) Raktár állapota - megnyomva a raktárról láthatunk bizonyos információkat
@@ -21,6 +23,7 @@ Egyiket kijelölve szûkíthetjük le a keresést a kiválasztott mezõre
 (Szöveges beviteli mezõ) a keresés gomb mellett
 Ide írhatunk be értékeket vagy kifejezéseket, ha keresni szeretnénk a raktárban
 (gomb) Keresés - Megnyomva a beírt kifejezést, és a kiválasztott mezõ alapján megkeresi a terméket
+
 
 (rádió gombok) - csoport
 -Összes termék
