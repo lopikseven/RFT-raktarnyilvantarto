@@ -141,7 +141,7 @@ namespace rft_raktarnyilvantarto
         {
             this.Min_db = Min_db;
         }
-
+        
         public Termek(int Id, string Vonalkod, string Nev, string Tipus, int Raktar_db, int Min_db):this(Vonalkod,Nev,Raktar_db,Min_db)
         {
             this.Id = Id;

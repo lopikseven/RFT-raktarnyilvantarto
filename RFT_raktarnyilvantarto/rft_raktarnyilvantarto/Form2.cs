@@ -67,33 +67,111 @@ namespace rft_raktarnyilvantarto
 
 
             Rendelesek rendeles = new Rendelesek("1111111111116", "atm", "Rendelse", 1);
-            try
-            {
+            //try
+            //{
                 while (Reader.Read())
                 {
-                    
-                        rendeles.Vonalkod = Reader[0].ToString();
-                        rendeles.Nev = Reader[1].ToString();
-                        rendeles.Tipus = Reader[2].ToString();
-                        rendeles.Rendelt_db = Convert.ToInt32(Reader[3].ToString());
-                        rendeles.Rendelo = Reader[4].ToString();
-                    
+                try
+                {
+                    rendeles.Vonalkod = Reader[0].ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("1");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
+                    rendeles.Nev = Reader[1].ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("2");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
+                    rendeles.Tipus = Reader[2].ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("3");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
+                    rendeles.Rendelt_db = Convert.ToInt32(Reader[3].ToString());
+                }
+                catch
+                {
+                    MessageBox.Show("4");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
+                    rendeles.Rendelo = Reader[4].ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("5");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
                     rendeles.Rendelesido = Reader[5].ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("6");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
                     rendeles.Erkezesido = Reader[6].ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("7");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
                     rendeles.Szallito = Reader[7].ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("8");
+                    Application.Exit();
+                    return;
+                }
+                try
+                {
                     rendeles.Beerkezet = Convert.ToBoolean(Reader[8].ToString());
-
-                    Rendelesek.Add(rendeles);
+                }
+                catch
+                {
+                    MessageBox.Show("9");
+                    Application.Exit();
+                    return;
+                }
+                Rendelesek.Add(rendeles);
 
                     rendeles = new Rendelesek("1111111111116", "atm", "Rendelse", 1);
                 }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Hiba az adatbázisban! Nem megfelelő rekord a Megrendelések táblában!");
-                Application.Exit();
-                return;
-            }
+            //}
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Hiba az adatbázisban! Nem megfelelő rekord a Megrendelések táblában!");
+            //    Application.Exit();
+            //    return;
+            //}
 
             Reader.Close();
             Connect.Close();
@@ -104,14 +182,11 @@ namespace rft_raktarnyilvantarto
 
         }
 
-        //private void lejartak_gomb_Click(object sender, EventArgs e)
-        //{
-        //    listBox1.Items.Clear();
-        //    foreach (Rendelesek r in Rendelesek)
-        //    {
-        //        if (r.Beerkezet == false && r.Erkezesido <= DateTime.Today)
-        //            listBox1.Items.Add(r.Nev + "-" + r.Tipus);
-        //    }
-        //}
+        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

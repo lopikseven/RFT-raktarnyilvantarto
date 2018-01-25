@@ -282,8 +282,8 @@ namespace rft_raktarnyilvantarto
         private void rendelesek_button_Click(object sender, EventArgs e)
         {
             
-           Form2 form2 = new Form2();
-           form2.Show();
+           Form5 form5 = new Form5();
+           form5.ShowDialog();
            this.Hide();
         }
 
@@ -365,6 +365,11 @@ namespace rft_raktarnyilvantarto
         }
 
         private void lb_megnevezes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rak_allapot_button_Click(object sender, EventArgs e)
         {
 
         }

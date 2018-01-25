@@ -192,6 +192,7 @@
             this.rak_allapot_button.TabIndex = 24;
             this.rak_allapot_button.Text = "Raktár állapota";
             this.rak_allapot_button.UseVisualStyleBackColor = true;
+            this.rak_allapot_button.Click += new System.EventHandler(this.rak_allapot_button_Click);
             // 
             // rendelendo_radio
             // 
