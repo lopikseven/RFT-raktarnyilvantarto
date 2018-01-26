@@ -8,12 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace rft_raktarnyilvantarto
 {
     public partial class Form5 : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\EKE\RFT\1\RFT-raktarnyilvantarto\RFT_raktarnyilvantarto\rft_raktarnyilvantarto\DataBase1.mdf;Integrated Security=True");
+      static   string s1 = System.Reflection.Assembly.GetExecutingAssembly().Location;
+      static   int idx = s1.LastIndexOf('\\');
+      static   string databasePath = s1.Substring(0, idx) + "\\Database1.mdf";
+
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+databasePath+";Integrated Security=True");
         public Form5()
         {
             InitializeComponent();
@@ -175,6 +181,26 @@ namespace rft_raktarnyilvantarto
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             con.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        //    if (comboBox1.Text == "ID")
+        //    {
+        //        con.Open();
+
+        //        SqlCommand cmd = new SqlCommand("select * from [Table] where not  Id = @id", con);
+        //        cmd.Parameters.AddWithValue("@id", textBox7.Text);
+               
+        //        cmd.ExecuteNonQuery();
+        //        con.Close();
+        //        disp_data();
+        //    }
         }
     }
 }
