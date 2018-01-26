@@ -69,7 +69,7 @@ namespace rft_raktarnyilvantarto
             con.Close();
             disp_data();
 
-            MessageBox.Show("Gratula jó irányba haladsz");
+            MessageBox.Show("Megrendelés sikeresen hozzá lett adva");
         }
 
         private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e)
